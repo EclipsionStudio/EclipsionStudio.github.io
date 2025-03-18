@@ -1,54 +1,154 @@
-.jetbrains-mono {
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #181e29;
-      margin: 1;
-      color: #ffffff;
-      font-family: 'jetbrains mono', sans-serif;
-  }
-  header {
-      width: 100%;
-      text-align: center;
-      padding: 0px 0;
-      background-color: transparent;
-  }
-  .logo {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+        
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  /*animation: fadeIn 1s ease-out;*/
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+
+.about-us {
+  padding: 42px 0;
+  margin: 20px;
+  background-color: #fff;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-us h1 {
+  font-size: 32px;
+  margin-bottom: 21px;
+  text-align: center;
+  color: #000000;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+
+.hero {
+  background-color: #ff8c00;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0;
+  color: aliceblue;
+  animation: fadeInUp 1.8s ease-out forwards;
+}
+
+.logo_hendler {
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    margin: 22px;
       width: 284px;
       height: auto;
-  }
-  hr {
-      width: 87%;
-      border: 1px solid #ac722e;
-      margin: 20px auto;
-  }
-  .company-name {
-      font-size: 28px;
-      font-weight: bold;
-      margin-top: 10px;
-      color: #ffffff;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-  }
-  .about {
-      text-align: center;
-      max-width: 600px;
-      margin-top: 20px;
-      font-size: 18px;
-      color: #bbbbbb;
-  }
-  footer {
-      position: absolute;
-      bottom: 20px;
+    border:solid;
+    border-width: 6px;
+    border-color: #95a0ab;
+    
+}
+
+
+footer {
+      position: fixed;
+      bottom: 0;
       width: 100%;
+      height: 50px;
+      padding: 20px;
       text-align: center;
       font-size: 14px;
       color: #888888;
+      background-color: #393d3d
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.text {
+    text-align: center;
+}

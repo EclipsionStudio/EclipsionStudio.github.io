@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ff8c00
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  /*animation: fadeIn 1s ease-out;*/
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+.hero {
+  background-color: #ff8c00;
+  color: white;
+  padding: 33px 41px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1.8s ease-out forwards;
+}
+
+.hero .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+}
+
+.statistics, .about-us {
+  padding: 42px 0;
+  margin: 20px;
+  background-color: #fff;
+  animation: fadeIn 1s ease-out;
+}
+
+.statistics .container, .about-us .container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.statistics h2, .about-us h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff6600;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.stat-info, .team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card, .team-member {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 14px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover, .team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3, .team-member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+
+.stat-card p, .team-member p {
+  font-size: 14px;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height:auto;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.text {
+    text-align: center;
+}
