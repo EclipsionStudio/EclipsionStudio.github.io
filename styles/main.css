@@ -5,11 +5,10 @@
 }
 
 body {
-      background-color: #ffffff;
+      background-color: #333;
       color: #000000;
       font-family: Arial, sans-serif;
       overflow-x: hidden;
-        
 }
 
 header {
@@ -27,7 +26,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 header nav ul {
@@ -52,8 +51,7 @@ header nav ul li a:hover {
 
 
 .about-us {
-  padding: 42px 0;
-  margin: 20px;
+  padding: 41px 0;
   background-color: #fff;
   animation: fadeIn 1s ease-out;
 }
@@ -107,15 +105,18 @@ header nav ul li a:hover {
 
 
 footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 50px;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #888888;
-      background-color: #393d3d
+  clear: both;
+  position: relative;
+  height: 100%;
+  background-color: #333;
+  color: #a6a6a6;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+footer p {
+  font-size: 14px;
 }
 
 
